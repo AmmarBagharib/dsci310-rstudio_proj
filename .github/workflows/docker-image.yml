@@ -1,0 +1,19 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ] #anytime there is a push request to main we run this file
+#  pull_request:
+#   branches: [ "main" ] #anytime there is a pull request from main we run this file
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest # a linux machine
+
+    steps:
+    - uses: actions/checkout@v3 # to generate an action which is to checkout this github repo
+    
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag ammarb99/dsci310-rstudio_proj:latest
