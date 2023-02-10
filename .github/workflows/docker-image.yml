@@ -16,4 +16,4 @@ jobs:
     - uses: actions/checkout@v3 # to generate an action which is to checkout this github repo
     
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ammarb99/dsci310-rstudio_proj:latest
+      run: docker build . --file Dockerfile --tag ammarb99/dsci310-rstudio_proj
