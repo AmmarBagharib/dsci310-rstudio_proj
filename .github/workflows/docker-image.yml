@@ -3,7 +3,7 @@ name: Docker Image CI
 on:
   workflow_dispatch:
   push:
-    branches: [ "main" ] #anytime there is a push request to main we run this file
+    branches: [ "main" ] # anytime there is a push request to main we run this file
 
 jobs:
 
