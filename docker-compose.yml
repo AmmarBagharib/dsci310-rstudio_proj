@@ -1,0 +1,10 @@
+services:
+  rstudio_environment:
+    image: rocker/rstudio:4.1.3
+    ports:
+      - "8888:8787"
+    volumes:
+      - .:/home/rstudio/introduction-to-datascience
+    environment:
+      # PASSWORD: asdf
+      DISABLE_AUTH: true
