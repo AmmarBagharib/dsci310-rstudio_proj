@@ -8,3 +8,10 @@ services:
     environment:
       # PASSWORD: asdf
       DISABLE_AUTH: true
+
+
+## Docker compose allows us to add in information of a particular docker image
+## we can add in more than one image in this docker compose and assign different ports
+## this is an intro to container orchestration
+
+## run docker-compose up -d
